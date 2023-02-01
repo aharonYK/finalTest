@@ -19,6 +19,7 @@ const Main = () => {
 
       const handleClick = () => {
         setUserId(userId);
+        handleWantedPosts();
       };
 
       const handleWantedPosts = async () => {
@@ -34,10 +35,6 @@ const Main = () => {
         }
       };
 
-      useEffect(() => {
-        handleWantedPosts();
-      
-   }, []);
 
    
 
